@@ -1,0 +1,9 @@
+{
+  "extends": "@mkvlrn/config/tsconfig-vite",
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": { "~/*": ["./src/*"], "#/*": ["./test/*"] },
+    "types": ["@testing-library/jest-dom"]
+  }
+}
