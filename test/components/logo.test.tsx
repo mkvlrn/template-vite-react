@@ -1,18 +1,17 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import { beforeEach, describe, expect, test } from "vitest";
-import { Title } from "~/components/title";
+import { beforeEach, describe, expect, it } from "vitest";
+import { Logo } from "~/components/logo";
 
 describe("all components", () => {
   beforeEach(() => {
     cleanup();
   });
 
-  test("title.tsx", () => {
-    render(<Title />);
+  it("should render logo.tsx", () => {
+    render(<Logo />);
 
-    const title = screen.getByRole("heading");
+    const logo = screen.getByRole("img");
 
-    expect(title).toBeInTheDocument();
-    expect(title).toHaveTextContent("React TypeScript SPA");
+    expect(logo).toBeInTheDocument();
   });
 });

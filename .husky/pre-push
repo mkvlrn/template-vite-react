@@ -1,4 +1,3 @@
-yarn tsc --noEmit
-yarn eslint --no-error-on-unmatched-pattern src/**/*.{ts,tsx} test/**/*.{ts,tsx}
-yarn prettier --check src test
-yarn vitest --run
+npm run typecheck
+npm run tidy
+npm run test

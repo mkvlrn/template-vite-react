@@ -1,5 +1,5 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import { beforeEach, describe, expect, test } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 import { Tagline } from "~/components/tagline";
 
 describe("all components", () => {
@@ -7,7 +7,7 @@ describe("all components", () => {
     cleanup();
   });
 
-  test("tagline.tsx", () => {
+  it("should render tagline.tsx", () => {
     render(<Tagline />);
 
     const tagline = screen.getByRole("heading");

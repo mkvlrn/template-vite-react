@@ -1,9 +1,24 @@
 {
-  "extends": "@mkvlrn/config/tsconfig-vite",
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "rootDir": "./",
-    "baseUrl": "./",
-    "paths": { "~/*": ["./src/*"], "#/*": ["./test/*"] },
-    "types": ["@testing-library/jest-dom"]
+    "allowJs": true,
+    "baseUrl": ".",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["Dom", "DOM.Iterable", "ESNext", "ESNext.Decorators"],
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "paths": { "~/*": ["./src/*"] },
+    "preserveSymlinks": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext"
   }
 }
