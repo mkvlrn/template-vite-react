@@ -4,8 +4,8 @@ import { Title } from "~/components/title";
 
 export function App() {
   return (
-    <main class="flex h-screen bg-[#2f4858] text-[#daf7dc]">
-      <div class="m-auto">
+    <main className="flex h-screen bg-[#2f4858] text-[#daf7dc]">
+      <div className="m-auto">
         <Title />
         <Tagline />
         <Logo />

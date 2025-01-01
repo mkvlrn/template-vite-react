@@ -7,7 +7,7 @@ export function Logo() {
       width="100%"
       height="100%"
       alt="React"
-      class="pointer-events-none mx-auto max-h-96 max-w-[24rem] animate-logoSpin"
+      className="pointer-events-none mx-auto max-h-96 max-w-[24rem] animate-logoSpin"
     />
   );
 }
