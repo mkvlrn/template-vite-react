@@ -1,5 +1,5 @@
 {
-  "name": "template-vite",
+  "name": "template-vite-react",
   "description": "A template for react projects built with vite",
   "version": "1.0.0",
   "license": "MIT",
@@ -8,7 +8,7 @@
   "author": "Mike Valeriano <mkvlrn@proton.me>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mkvlrn/template-vite"
+    "url": "git@github.com:mkvlrn/template-vite-react"
   },
   "keywords": ["vite", "react", "esm", "template"],
   "scripts": {
