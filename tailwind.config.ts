@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+// biome-ignore lint/style/noDefaultExport: needed for tailwind
+export default {
   content: ["./src/**/*.{html,tsx,ts}"],
   theme: {
     extend: {
@@ -10,7 +11,4 @@ const config: Config = {
       animation: { logoSpin: "logoSpin 20s linear infinite" },
     },
   },
-};
-
-// biome-ignore lint/style/noDefaultExport: needed for tailwind
-export default config;
+} as Config;

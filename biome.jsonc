@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "ignoreUnknown": false,
+    "ignoreUnknown": true,
     "ignore": []
   },
   "formatter": {
@@ -21,6 +21,7 @@
     "rules": {
       "all": true,
       "suspicious": {
+        // not needed, as it is a react project
         "noReactSpecificProps": "off"
       }
     }
