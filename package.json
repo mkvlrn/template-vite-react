@@ -17,7 +17,7 @@
     "start": "npx vite preview",
     "test": "npx vitest run",
     "test:cov": "npx vitest run --coverage",
-    "tidy": "npx biome check --write src test",
+    "tidy": "npx biome check --write src test *.ts",
     "typecheck": "npx tsc --noEmit",
     "prepare": "npx husky"
   },

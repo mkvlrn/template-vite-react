@@ -12,4 +12,5 @@ const config: Config = {
   },
 };
 
+// biome-ignore lint/style/noDefaultExport: needed for tailwind
 export default config;
