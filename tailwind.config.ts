@@ -6,7 +6,10 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        logoSpin: { from: { transform: "rotate(0deg)" }, to: { transform: "rotate(-360deg)" } },
+        logoSpin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(-360deg)" },
+        },
       },
       animation: { logoSpin: "logoSpin 20s linear infinite" },
     },
