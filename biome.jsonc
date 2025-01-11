@@ -16,12 +16,16 @@
     "formatWithErrors": true
   },
   "organizeImports": {
-    "enabled": true
+    "enabled": false
   },
   "linter": {
     "enabled": true,
     "rules": {
       "all": true,
+      "complexity": {
+        // this goes against typescript's noPropertyAccessFromIndexSignature
+        "useLiteralKeys": "off"
+      },
       "suspicious": {
         // not needed, as it is a react project
         "noReactSpecificProps": "off"

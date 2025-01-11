@@ -8,34 +8,45 @@ Uses biome, vite, vitest, husky.
 
 ### `yarn dev`
 
-This will run the project in watch mode, and will automatically restart on changes.
+Runs the project in watch mode, and will automatically restart on changes.
 
 ### `yarn build`
 
-This will build the project to `./build`.
+Builds the project to `./build`.
 
 ### `yarn start`
 
-This will run the project in production mode using vite's preview server.
+Runs the project in production mode using vite's preview server.
 
-### `yarn test`
+### `yarn test`, `yarn test:integration`, `yarn test:e2e`
 
-This will run vitest tests once. Use `--watch` to run in watch mode, and `--coverage` to generate coverage reports.
+Vitest is configured to work in 3 different types of tests, indicated by the script name (`yarn test` without a specifier will run unit tests).
 
 ### `yarn tidy`
 
 This will run biome in fix mode (only safe fixes) to lint and format the project. Directories `./src` and `./test`, along with all "loose" compatible files in the root of the project (js, ts, json, jsonc) will be processed.
 
-### `yarn typecheck`
+## test conventions
 
-This will run the typescript compiler to check for type errors. Does not transpile any files, only checks the type errors.
+Convention over configuration, yo. But configure away if you must!
+
+Three directories laid out in the root of the project:
+
+- `./test` for unit tests, mirroring the structure of `./src`
+- `./test-integration` for integration tests
+- `./test-e2e` for end-to-end tests
+
+Within each of these directories, the `_mocks`, `_setup`, and `_utils` directories should hold any mocks, vitest setup files (those are used automatically by the vitest config), and general utilities for the tests.
+
+Since the folder directories are path aliased, any mocks or utilities needed by the tests can be imported from the 🧪 alias, such as `🧪/_utils/my-util.ts`. You can change the alias in the `tsconfig.json` file if you find it difficult to use emojis and you _hate fun_.
+
+The tests are run with vitest, which is configured in `./vitest.config.ts`. This config depends on this directory structure, and will automatically find all the tests in the `./test` directory.
 
 ## vscode
 
 You might want to install the recommended extensions in vscode (workspace recommended):
 
 - [biomejs.biome](https://marketplace.visualstudio.com/items?itemName=biomejs.biome)
-- [EditorConfig.EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [ms-vscode.test-adapter-converter](https://marketplace.visualstudio.com/items?itemName=ms-vscode.test-adapter-converter)
 - [vitest.explorer](https://marketplace.visualstudio.com/items?itemName=vitest.explorer)
 
@@ -55,10 +66,7 @@ I suggest using this configuration (YMMV):
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.fixAll": "never",
-    "source.fixAll.sortJSON": "never",
-    "source.organizeImports": "never",
-    "source.organizeImports.biome": "explicit",
-    "source.sortImports": "never"
+    "source.organizeImports.biome": "never"
   },
   "eslint.enable": false
 }
