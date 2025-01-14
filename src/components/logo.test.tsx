@@ -1,13 +1,13 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, test } from "vitest";
 import { Logo } from "~/components/logo";
 
-describe("all components", () => {
+describe("logo.tsx", () => {
   beforeEach(() => {
     cleanup();
   });
 
-  it("should render logo.tsx", () => {
+  test("should render the component", () => {
     render(<Logo />);
 
     const logo = screen.getByRole("img");
