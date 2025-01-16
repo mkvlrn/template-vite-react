@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    // no emit by default, build config enables it
+    // no emit by default
     "noEmit": true,
 
     // remove comments from output
