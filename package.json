@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git@github.com:mkvlrn/template-vite-react"
   },
-  "keywords": [
-    "vite",
-    "react",
-    "esm",
-    "template"
-  ],
+  "keywords": ["vite", "react", "esm", "template"],
   "scripts": {
     "build": "NODE_ENV=production npx vite build",
     "dev": "vite",
