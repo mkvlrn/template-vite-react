@@ -16,6 +16,9 @@
       "complexity": {
         // this goes against typescript's noPropertyAccessFromIndexSignature
         "useLiteralKeys": "off"
+      },
+      "nursery": {
+        "useSortedClasses": { "level": "error", "fix": "safe", "options": {} }
       }
     }
   },
