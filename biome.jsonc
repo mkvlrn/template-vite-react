@@ -18,6 +18,7 @@
         "useLiteralKeys": "off"
       },
       "nursery": {
+        // tailwind class sorting
         "useSortedClasses": { "level": "error", "fix": "safe", "options": {} }
       }
     }
