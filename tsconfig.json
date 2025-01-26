@@ -24,15 +24,12 @@
     "target": "esnext",
 
     // follow esm conventions
-    // tsc-alias needs outDir to be set
     "moduleDetection": "force",
     "moduleResolution": "bundler",
-    "outDir": "./build",
 
     // paths for imports
-    // 🧪 is neat, don't be a hater
     "baseUrl": ".",
-    "paths": { "~/*": ["./src/*"], "🧪/*": ["./test/*"] },
+    "paths": { "~/*": ["./src/*"] },
     "rootDir": ".",
 
     // pnpm compatibility

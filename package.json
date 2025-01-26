@@ -15,7 +15,7 @@
     "build": "NODE_ENV=production npx vite build",
     "dev": "vite",
     "start": "vite preview",
-    "test:ci": "yarn test --run --bail=1 --reporter=default && yarn test:e2e --run --bail=1 --reporter=default",
+    "test:ci": "yarn test --bail=1 --reporter=default && yarn test:e2e --bail=1 --reporter=default",
     "test": "vitest",
     "test:e2e": "vitest --config e2e/vitest.config.ts",
     "tidy:ci": "biome check --no-errors-on-unmatched",

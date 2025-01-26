@@ -19,6 +19,7 @@ export const testConfig = defineTestConfig({
   test: {
     include: ["./src/**/*.test.{ts,tsx}"],
     reporters: ["verbose"],
+    watch: false,
     coverage: {
       all: true,
       clean: true,
