@@ -8,7 +8,10 @@ const { PORT = "3000" } = process.env;
 
 const baseConfig = defineConfig({
   plugins: [react(), tsconfigPaths()],
-  server: { port: Number(PORT), allowedHosts: true },
+  server: {
+    port: Number(PORT),
+    allowedHosts: true,
+  },
   build: {
     outDir: "./build",
     emptyOutDir: true,

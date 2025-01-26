@@ -13,8 +13,8 @@
   "keywords": ["vite", "react", "esm", "template"],
   "scripts": {
     "build": "NODE_ENV=production npx vite build",
-    "dev": "vite",
-    "start": "vite preview",
+    "dev": "vite --host",
+    "start": "vite preview --host",
     "test:ci": "yarn test --bail=1 --reporter=default && yarn test:e2e --bail=1 --reporter=default",
     "test": "vitest",
     "test:e2e": "vitest --config e2e/vitest.config.ts",
