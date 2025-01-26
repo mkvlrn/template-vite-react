@@ -9,5 +9,6 @@ describe("app.tsx", () => {
     const app = screen.getByRole("main");
 
     expect(app).toBeInTheDocument();
+    expect(app).toHaveTextContent("React TypeScript SPA");
   });
 });
