@@ -1,1 +1,2 @@
 yarn tidy --staged
+git add .
