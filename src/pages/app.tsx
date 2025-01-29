@@ -4,7 +4,7 @@ import { Title } from "~/components/title";
 
 export function App() {
   return (
-    <main className="flex h-screen bg-[#2f4858] font-roboto-condensed text-[#daf7dc]">
+    <main className="flex h-screen bg-background font-roboto-condensed text-foreground">
       <div className="m-auto">
         <Title />
         <Tagline />

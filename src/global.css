@@ -1,16 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  @keyframes logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-360deg);
-    }
-  }
+  --foreground: #daf7dc;
+  --background: #2f4858;
 
   --color-\*: initial; /* tw v4 adds A LOT of default colors to a theme */
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
   --font-roboto-condensed: "Roboto Condensed", sans-serif;
-  --animate-logo-spin: 15s linear infinite logo-spin;
 }
