@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-* {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
 @theme {
   @keyframes logo-spin {
     from {
@@ -14,5 +10,7 @@
     }
   }
 
+  --color-\*: initial; /* tw v4 adds A LOT of default colors to a theme */
+  --font-roboto-condensed: "Roboto Condensed", sans-serif;
   --animate-logo-spin: 15s linear infinite logo-spin;
 }
