@@ -1,5 +1,5 @@
-import logo from "~/assets/react.svg";
-import "~/components/logo.css";
+import logo from "#assets/react.svg";
+import "#components/logo.css";
 
 export function Logo() {
   return (

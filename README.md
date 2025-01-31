@@ -13,15 +13,15 @@ Uses:
 
 ### `yarn dev`
 
-Runs the project in watch mode, and will automatically restart on changes.
+Runs the project in watch mode.
 
 ### `yarn build`
 
-Builds the project to `./build`.
+Builds/transpiles the code to `./build`.
 
 ### `yarn start`
 
-Runs the project in production mode using vite's preview server.
+Runs the built project.
 
 ### `yarn test`, `yarn test:e2e`
 
@@ -29,11 +29,11 @@ Runs tests with vitest.
 
 ### `yarn tidy`
 
-Runs biome in fix mode (only [safe fixes](https://biomejs.dev/linter/#safe-fixes)) to lint and format the project. Not only `./src` and `./test`, but also all "loose" config files around root (js, ts, json, jsonc) or other directories.
+Runs biome in fix mode (only [safe fixes](https://biomejs.dev/linter/#safe-fixes)) to lint and format the project.
 
 ### `yarn typecheck`
 
-Runs type checking using tsc and the `tsconfig.json` file, which is not the one used to build the project.
+Runs type checking using tsc.
 
 ## that tsconfig.json seems very strict and opinionated
 
