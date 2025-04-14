@@ -1,12 +1,8 @@
-import { Tagline } from "#components/tagline.tsx";
-import { cleanup, render, screen } from "@testing-library/react";
-import { beforeEach, describe, expect, test } from "vitest";
+import { render, screen } from "@testing-library/react";
+import { describe, expect, test } from "vitest";
+import { Tagline } from "~/components/tagline/tagline.js";
 
 describe("tagline.tsx", () => {
-  beforeEach(() => {
-    cleanup();
-  });
-
   test("should render the component", () => {
     render(<Tagline />);
 

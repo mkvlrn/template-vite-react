@@ -1,38 +1,48 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true, "defaultBranch": "main" },
-  "files": { "ignoreUnknown": true, "include": ["**/*"], "ignore": [] },
-  "formatter": {
-    "enabled": true,
-    "formatWithErrors": true,
-    "indentStyle": "space",
-    "lineWidth": 100
-  },
-  "organizeImports": { "enabled": false },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "all": true,
-      "complexity": {
-        // this goes against typescript's noPropertyAccessFromIndexSignature
-        "useLiteralKeys": "off"
-      },
-      "nursery": {
-        // tailwind class sorting
-        "useSortedClasses": { "level": "error", "fix": "safe", "options": {} }
-      }
-    }
-  },
+  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": ["@mkvlrn/config/biome"],
   "overrides": [
     {
-      // some/most config files on root export defaults from them
-      "include": ["*.config.ts", "*.config.js"],
-      "linter": { "rules": { "style": { "noDefaultExport": "off" } } }
+      // dont sort keys in these because they're usually in a specific order for readability
+      "includes": ["**/biome.json", "**/biome.jsonc", "**/package.json", "**/tsconfig.json"],
+      "assist": {
+        "actions": {
+          "source": {
+            "useSortedKeys": "off"
+          }
+        }
+      }
     },
     {
-      // react
-      "include": ["**/*.tsx"],
-      "linter": { "rules": { "suspicious": { "noReactSpecificProps": "off" } } }
+      // some/most config files on root export defaults from them
+      // and import from node
+      "includes": ["**/*.config.ts"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noNodejsModules": "off"
+          },
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.tsx"],
+      "linter": {
+        "domains": {
+          "react": "all"
+        },
+        "rules": {
+          "nursery": {
+            "useExplicitType": "info"
+          },
+          "suspicious": {
+            "noReactSpecificProps": "off"
+          }
+        }
+      }
     }
   ]
 }

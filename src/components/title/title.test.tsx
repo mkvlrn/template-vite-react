@@ -1,12 +1,8 @@
-import { Title } from "#components/title.tsx";
-import { cleanup, render, screen } from "@testing-library/react";
-import { beforeEach, describe, expect, test } from "vitest";
+import { render, screen } from "@testing-library/react";
+import { describe, expect, test } from "vitest";
+import { Title } from "~/components/title/title.js";
 
 describe("title.tsx", () => {
-  beforeEach(() => {
-    cleanup();
-  });
-
   test("should render the component", () => {
     render(<Title />);
 

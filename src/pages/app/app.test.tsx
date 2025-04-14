@@ -1,6 +1,6 @@
-import { App } from "#pages/app.tsx";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
+import { App } from "~/pages/app/app.js";
 
 describe("app.tsx", () => {
   test("should render the component", () => {
@@ -10,5 +10,8 @@ describe("app.tsx", () => {
 
     expect(app).toBeInTheDocument();
     expect(app).toHaveTextContent("React TypeScript SPA");
+    expect(app).toHaveTextContent(
+      "An opinionated template for SPA React projects built with Vite.",
+    );
   });
 });
