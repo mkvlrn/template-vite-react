@@ -1,10 +1,9 @@
-import { env } from "node:process";
+import process from "node:process";
 import { fileURLToPath } from "node:url";
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 
-// biome-ignore lint/nursery/useExplicitType: false positive https://github.com/biomejs/biome/issues/5932
-const PORT: string = env.PORT ?? "3000";
+const { PORT = "3000" } = process.env;
 
 export default defineConfig({
   resolve: {
