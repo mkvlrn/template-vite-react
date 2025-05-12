@@ -19,7 +19,7 @@
     // esm, the node way
     "esModuleInterop": true,
     "isolatedModules": true,
-    "lib": ["ESNext"],
+    "lib": ["Dom", "DOM.Iterable", "ESNext"],
     "module": "NodeNext",
     "moduleResolution": "nodenext",
     "target": "esnext",
@@ -37,7 +37,10 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+
+    // react
+    "jsx": "react-jsx"
   },
 
   "exclude": ["node_modules", "build", "coverage", "dist"]
