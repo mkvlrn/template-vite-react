@@ -17,7 +17,7 @@
     "template"
   ],
   "engines": {
-    "node": ">=23.8"
+    "node": "24.x"
   },
   "scripts": {
     "build": "NODE_ENV=production npx vite build",
@@ -30,7 +30,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.0.0-beta.3",
+    "@biomejs/biome": "https://pkg.pr.new/biomejs/biome/@biomejs/biome@5013025",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@tailwindcss/postcss": "^4.1.6",

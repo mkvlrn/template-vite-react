@@ -50,59 +50,50 @@
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.27.1.tgz#9fce313d12c9a77507f264de74626e87fd0dc541"
   integrity sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog==
 
-"@biomejs/biome@^2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/biome/-/biome-2.0.0-beta.3.tgz#fe13bd1a0d39478368a9e46e0900c547d27b927a"
-  integrity sha512-KKvtP0iapIpmOpoljEITOcG7IPOn2HVUJxZOn4ULJbUsOlPEJcrKI0BwKZ/E1PeflxjaSfcKUxHhdB7bjBBPvg==
+"@biomejs/biome@https://pkg.pr.new/biomejs/biome/@biomejs/biome@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/biome@5013025#aea2e79c4e50f40f31a6322602c9961eb3815101"
   optionalDependencies:
-    "@biomejs/cli-darwin-arm64" "2.0.0-beta.3"
-    "@biomejs/cli-darwin-x64" "2.0.0-beta.3"
-    "@biomejs/cli-linux-arm64" "2.0.0-beta.3"
-    "@biomejs/cli-linux-arm64-musl" "2.0.0-beta.3"
-    "@biomejs/cli-linux-x64" "2.0.0-beta.3"
-    "@biomejs/cli-linux-x64-musl" "2.0.0-beta.3"
-    "@biomejs/cli-win32-arm64" "2.0.0-beta.3"
-    "@biomejs/cli-win32-x64" "2.0.0-beta.3"
+    "@biomejs/cli-darwin-arm64" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-darwin-arm64@5013025"
+    "@biomejs/cli-darwin-x64" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-darwin-x64@5013025"
+    "@biomejs/cli-linux-arm64" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-arm64@5013025"
+    "@biomejs/cli-linux-arm64-musl" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-arm64-musl@5013025"
+    "@biomejs/cli-linux-x64" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-x64@5013025"
+    "@biomejs/cli-linux-x64-musl" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-x64-musl@5013025"
+    "@biomejs/cli-win32-arm64" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-win32-arm64@5013025"
+    "@biomejs/cli-win32-x64" "https://pkg.pr.new/biomejs/biome/@biomejs/cli-win32-x64@5013025"
 
-"@biomejs/cli-darwin-arm64@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-darwin-arm64/-/cli-darwin-arm64-2.0.0-beta.3.tgz#9a0ff09e3b5a7a9d20668afc49d1951136f734f0"
-  integrity sha512-UYeevewqg3YOnwGEPA4m6+lQQY+YiMeev4GufnurOxodl1QoYCdMosaBhlGlISBa/HwBDw9JQ10yjzsBF9GlTQ==
+"@biomejs/cli-darwin-arm64@https://pkg.pr.new/biomejs/biome/@biomejs/cli-darwin-arm64@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-darwin-arm64@5013025#fa1aa74ad40b8c1f869f50da85d61aafae17b553"
 
-"@biomejs/cli-darwin-x64@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-darwin-x64/-/cli-darwin-x64-2.0.0-beta.3.tgz#1254777f5522ae19b8eb31481abfdfd3b08fbbd4"
-  integrity sha512-jANiFMTFq2Bgw1cySc6I4R1tZlkkY1Go5mdAQDXZIwAr+45TGKLzxiOKJdWTN8GGQ0KzOwJxjHZ5vV6vx1JxsA==
+"@biomejs/cli-darwin-x64@https://pkg.pr.new/biomejs/biome/@biomejs/cli-darwin-x64@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-darwin-x64@5013025#eb6dd460a63d0a7834a0bfd6818d733385e16f97"
 
-"@biomejs/cli-linux-arm64-musl@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-arm64-musl/-/cli-linux-arm64-musl-2.0.0-beta.3.tgz#1e4450ac39b9b910a5f47233d962f18f93440c16"
-  integrity sha512-mOQ48zNYZ6A+0eQUyZlPwuLJdEPkUdaoOLnbL1Y9GbeQfvvQYGwohDTIfcHk7yUxSImB1pPyLpiguam0jymeOg==
+"@biomejs/cli-linux-arm64-musl@https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-arm64-musl@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-arm64-musl@5013025#a1f0f2ec65c6ad9e35bb187349dcd690e3ebc743"
 
-"@biomejs/cli-linux-arm64@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-arm64/-/cli-linux-arm64-2.0.0-beta.3.tgz#942a18998a7aec539d55c2eb284ed466671ae16f"
-  integrity sha512-KW4NLOW6n4YPEa4bVo4GPYBJpeIuFfxVd2tsyM+xjuGk8zmo4dkswPUxKN/qW/mh/98ISvdKsusKoSZ6M3kpLg==
+"@biomejs/cli-linux-arm64@https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-arm64@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-arm64@5013025#34e523d8eeb6705ec68418d71bb88657fa0f41bf"
 
-"@biomejs/cli-linux-x64-musl@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-x64-musl/-/cli-linux-x64-musl-2.0.0-beta.3.tgz#d8262f780798fb218c2deb72be5691b39ad63548"
-  integrity sha512-170/P0qpudpwZCP0U/lfU4cxjpDZwTUi/lSYKfAPyVQfnRX8P+1j+3hv4voaREBC1nenPdsIJ4daWb6BB7W2jQ==
+"@biomejs/cli-linux-x64-musl@https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-x64-musl@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-x64-musl@5013025#df4ebff37374a9c5dc7a624294f78a615ca51fc5"
 
-"@biomejs/cli-linux-x64@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-linux-x64/-/cli-linux-x64-2.0.0-beta.3.tgz#efe07bc5c7eda20c14f8e802a3f481274e3c1034"
-  integrity sha512-oYtyC7oNpQ8+2uq3hEZGhYv/EtIuwMsv7OcL5cnFzrrzVEtaB6jh5jOlYkA+agovQRVv/bgWfP4FO6yIHskG8w==
+"@biomejs/cli-linux-x64@https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-x64@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-linux-x64@5013025#baf682bcd1d13c5165dd257f3c10a1d4288c2847"
 
-"@biomejs/cli-win32-arm64@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-win32-arm64/-/cli-win32-arm64-2.0.0-beta.3.tgz#1cd4575257946697cdff3ade86bcb644e6d03ce6"
-  integrity sha512-+ed97qATUxuAJ+rrnwCqzJ+Xhn082NV5P00GyRyLDGXGxJYMvpWhSUJWW06VABDc9UftoowOop3xK43YfcJStA==
+"@biomejs/cli-win32-arm64@https://pkg.pr.new/biomejs/biome/@biomejs/cli-win32-arm64@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-win32-arm64@5013025#e5cf51ad55cdaf2c5a3d25103a3fd172d7cfad96"
 
-"@biomejs/cli-win32-x64@2.0.0-beta.3":
-  version "2.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@biomejs/cli-win32-x64/-/cli-win32-x64-2.0.0-beta.3.tgz#7ea07cf5211bb31fa040df832b82085ef79e79de"
-  integrity sha512-bKenWRtAayTZ+gaSXR7ySTtdC9LkDm1tiYMXNSCTA0D633hT2vNxdjsJ1uYQmehVvdqUkXJ+nrTLtrjWuS1mKA==
+"@biomejs/cli-win32-x64@https://pkg.pr.new/biomejs/biome/@biomejs/cli-win32-x64@5013025":
+  version "1.9.4"
+  resolved "https://pkg.pr.new/biomejs/biome/@biomejs/cli-win32-x64@5013025#50ad5bbb80c423dc5a1d6c84d5ea34f41dde348c"
 
 "@commitlint/cli@^19.8.1":
   version "19.8.1"

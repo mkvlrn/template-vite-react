@@ -31,7 +31,9 @@
     "domains": {
       "project": "all",
       "test": "all",
-      "react": "all"
+      "react": "all",
+      "next": "none",
+      "solid": "none"
     },
     "enabled": true,
     "rules": {

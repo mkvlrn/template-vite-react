@@ -3,7 +3,6 @@ import "~/components/logo/logo.css";
 
 export function Logo() {
   return (
-    // biome-ignore lint/performance/noImgElement: not a next project
     <img
       alt="React"
       className="logo-spin pointer-events-none mx-auto max-h-96 max-w-[24rem]"
