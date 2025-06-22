@@ -2,6 +2,7 @@
   "compilerOptions": {
     // no transpiling
     "noEmit": true,
+    "allowImportingTsExtensions": true,
 
     // no funny business
     "erasableSyntaxOnly": true,

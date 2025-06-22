@@ -11,27 +11,27 @@ Uses:
 
 ## running
 
-### `yarn dev`
+### `npm run dev`
 
 Runs the project in watch mode.
 
-### `yarn build`
+### `npm run build`
 
 Builds/transpiles the code to `./build`.
 
-### `yarn start`
+### `npm start`
 
 Runs the production simulation of the project.
 
-### `yarn test`
+### `npm test`
 
 Runs tests with vitest.
 
-### `yarn biome-fix`
+### `npm run biome-fix`
 
 Runs biome in fix mode (only [safe fixes](https://biomejs.dev/linter/#safe-fixes)) to lint and format the project.
 
-### `yarn typecheck`
+### `npm run typecheck`
 
 Runs type checking using tsc.
 
