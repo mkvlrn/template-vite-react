@@ -1,11 +1,12 @@
 import process from "node:process";
-import react from "@vitejs/plugin-react-swc";
-import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { mergeConfig, type UserConfig as ViteConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import type { ViteUserConfig as VitestConfig } from "vitest/config";
 
 const { PORT = "3000" } = process.env;
 
-export default defineConfig({
+const viteConfig: ViteConfig = {
   plugins: [react(), tsconfigPaths()],
 
   server: {
@@ -17,4 +18,28 @@ export default defineConfig({
     outDir: "./build",
     emptyOutDir: true,
   },
-});
+};
+
+const vitestConfig: VitestConfig = {
+  plugins: [tsconfigPaths()],
+
+  test: {
+    include: ["src/**/*.test.{ts,tsx}"],
+    reporters: ["verbose"],
+    watch: false,
+    coverage: {
+      all: true,
+      clean: true,
+      cleanOnRerun: true,
+      include: ["src"],
+      exclude: ["src/**/*.test.{ts,tsx}", "src/main.{ts,tsx}"],
+    },
+    // biome-ignore lint/style/useNamingConvention: needed for vitest
+    env: { NODE_ENV: "test" },
+    environment: "jsdom",
+    passWithNoTests: true,
+    setupFiles: ["./.vite/vitest.setup.ts"],
+  },
+};
+
+export default mergeConfig(viteConfig, vitestConfig);
