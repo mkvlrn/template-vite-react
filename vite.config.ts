@@ -1,12 +1,11 @@
 import process from "node:process";
 import react from "@vitejs/plugin-react";
-import { mergeConfig, type UserConfig as ViteConfig } from "vite";
+import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import type { ViteUserConfig as VitestConfig } from "vitest/config";
 
 const { PORT = "3000" } = process.env;
 
-const viteConfig: ViteConfig = {
+export default defineConfig({
   plugins: [react(), tsconfigPaths()],
 
   server: {
@@ -18,10 +17,6 @@ const viteConfig: ViteConfig = {
     outDir: "./build",
     emptyOutDir: true,
   },
-};
-
-const vitestConfig: VitestConfig = {
-  plugins: [tsconfigPaths()],
 
   test: {
     include: ["src/**/*.test.{ts,tsx}"],
@@ -40,6 +35,4 @@ const vitestConfig: VitestConfig = {
     passWithNoTests: true,
     setupFiles: ["./.vite/vitest.setup.ts"],
   },
-};
-
-export default mergeConfig(viteConfig, vitestConfig);
+});
