@@ -1,3 +1,7 @@
 {
-  "recommendations": ["biomejs.biome", "ms-vscode.test-adapter-converter"]
+  "recommendations": [
+    "biomejs.biome",
+    "ms-vscode.test-adapter-converter",
+    "firefox-devtools.vscode-firefox-debug"
+  ]
 }
