@@ -1,12 +1,17 @@
 import process from "node:process";
 import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { defineConfig } from "vitest/config";
 
 const { PORT = "3000" } = process.env;
 
 export default defineConfig({
-  plugins: [react(), tsconfigPaths()],
+  plugins: [
+    // parse jsx
+    react(),
+    // resolve tsconfig path aliases
+    tsconfigPaths(),
+  ],
 
   server: {
     port: Number(PORT),
@@ -14,6 +19,7 @@ export default defineConfig({
   },
 
   build: {
+    target: "esnext",
     sourcemap: true,
     outDir: "./build",
     emptyOutDir: true,
@@ -34,6 +40,6 @@ export default defineConfig({
     env: { NODE_ENV: "test" },
     environment: "jsdom",
     passWithNoTests: true,
-    setupFiles: ["./.vite/vitest.setup.ts"],
+    setupFiles: ["./vitest.setup.ts"],
   },
 });
