@@ -7,7 +7,7 @@ import { defineConfig } from "vitest/config";
 const { PORT = "3000" } = process.env;
 
 // dependencies to be internalized/bundled
-const internalPackages: (string | RegExp)[] = ["@mkvlrn/result"];
+const internalPackages: (string | RegExp)[] = [];
 // dependencies to be externalized forcefully
 const externalPackages: (string | RegExp)[] = [];
 
