@@ -17,6 +17,7 @@ export default defineConfig({
     react(),
     // externalize node builtins
     nodeExternals({
+      deps: false, // important for react
       include: externalPackages,
       exclude: internalPackages,
     }),
