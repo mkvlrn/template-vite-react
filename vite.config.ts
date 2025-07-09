@@ -1,26 +1,14 @@
 import process from "node:process";
 import react from "@vitejs/plugin-react";
-import nodeExternals from "rollup-plugin-node-externals";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { defineConfig } from "vitest/config";
 
 const { PORT = "3000" } = process.env;
 
-// dependencies to be internalized/bundled
-const internalPackages: (string | RegExp)[] = [];
-// dependencies to be externalized forcefully
-const externalPackages: (string | RegExp)[] = [];
-
 export default defineConfig({
   plugins: [
     // parse jsx
     react(),
-    // externalize node builtins
-    nodeExternals({
-      deps: false, // important for react
-      include: externalPackages,
-      exclude: internalPackages,
-    }),
     // resolve tsconfig path aliases
     tsconfigPaths(),
   ],
