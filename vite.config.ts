@@ -6,6 +6,8 @@ import { defineConfig } from "vitest/config";
 const { PORT = "3000" } = process.env;
 
 export default defineConfig({
+  base: "https://mkvlrn.github.io/template-vite-react/",
+
   plugins: [
     // parse jsx
     react(),
