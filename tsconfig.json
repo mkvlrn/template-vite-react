@@ -42,7 +42,5 @@
 
     // react
     "jsx": "react-jsx"
-  },
-
-  "exclude": ["node_modules", "build", "coverage", "dist"]
+  }
 }
