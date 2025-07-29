@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import { Tagline } from "#/components/tagline/tagline.tsx";
+import { Tagline } from "#/components/tagline/tagline";
 
 describe("tagline.tsx", () => {
   test("should render the component", () => {
