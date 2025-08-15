@@ -3,10 +3,10 @@ import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { defineConfig } from "vitest/config";
 
-const { PORT = "3000" } = process.env;
+const { PORT = "3000", NODE_ENV } = process.env;
 
 export default defineConfig({
-  base: "https://mkvlrn.github.io/template-vite-react/",
+  base: NODE_ENV === "production" ? "https://mkvlrn.github.io/template-vite-react/" : "",
 
   plugins: [
     // parse jsx
