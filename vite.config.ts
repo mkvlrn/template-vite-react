@@ -1,11 +1,12 @@
 import process from "node:process";
 import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { defineConfig } from "vitest/config";
+import { defineConfig as defineTestConfig, mergeConfig } from "vitest/config";
 
 const { PORT = "3000", NODE_ENV } = process.env;
 
-export default defineConfig({
+const config = defineConfig({
   base: NODE_ENV === "production" ? "https://mkvlrn.github.io/template-vite-react/" : "",
 
   plugins: [
@@ -26,7 +27,9 @@ export default defineConfig({
     outDir: "./build",
     emptyOutDir: true,
   },
+});
 
+const testConfig = defineTestConfig({
   test: {
     include: ["src/**/*.test.{ts,tsx}"],
     reporters: ["verbose"],
@@ -45,3 +48,5 @@ export default defineConfig({
     setupFiles: ["./vitest.setup.ts"],
   },
 });
+
+export default mergeConfig(config, testConfig);
