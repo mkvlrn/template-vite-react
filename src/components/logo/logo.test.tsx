@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, test } from "vitest";
-import { Logo } from "#/components/logo/logo";
+import { Logo } from "./logo.tsx";
 
 describe("logo.tsx", () => {
   test("should render the component", () => {

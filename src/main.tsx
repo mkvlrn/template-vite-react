@@ -1,7 +1,7 @@
-import "#/style.css";
+import "./style.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { App } from "#/app/app";
+import { App } from "./app/app.tsx";
 
 const rootElement = document.querySelector("#root");
 if (!rootElement) {

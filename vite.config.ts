@@ -1,7 +1,6 @@
 import process from "node:process";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
 import { defineConfig as defineTestConfig, mergeConfig } from "vitest/config";
 
 const { PORT = "3000", NODE_ENV } = process.env;
@@ -9,12 +8,7 @@ const { PORT = "3000", NODE_ENV } = process.env;
 const config = defineConfig({
   base: NODE_ENV === "production" ? "https://mkvlrn.github.io/template-vite-react/" : "",
 
-  plugins: [
-    // parse jsx
-    react(),
-    // resolve tsconfig path aliases
-    tsconfigPaths(),
-  ],
+  plugins: [react()],
 
   server: {
     port: Number(PORT),
