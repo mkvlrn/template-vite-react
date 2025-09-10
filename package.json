@@ -30,10 +30,10 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.2.2",
+    "@biomejs/biome": "^2.2.4",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@mkvlrn/config": "^2.0.18",
+    "@mkvlrn/config": "^2.0.19",
     "@tailwindcss/postcss": "^4.1.13",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
@@ -50,7 +50,7 @@
     "tailwindcss": "^4.1.13",
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.2",
-    "vite": "^7.1.4",
+    "vite": "^7.1.5",
     "vitest": "^3.2.4"
   },
   "dependencies": {

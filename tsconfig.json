@@ -1,3 +1,6 @@
 {
-  "extends": ["@mkvlrn/config/tsconfig-react"]
+  "extends": ["@mkvlrn/config/tsconfig-react"],
+  "compilerOptions": {
+    "noEmit": true
+  }
 }
