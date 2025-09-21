@@ -24,10 +24,10 @@ function getConfig() {
     },
   });
 
-  const withIntegration = process.env["INTEGRATION"] === "true";
-  const testFiles = withIntegration
-    ? ["./src/**/*.{test,spec}.{ts,tsx}"]
-    : ["./src/**/*.test.{ts,tsx}"];
+  const testFiles = ["./src/**/*.{test,spec}.{ts,tsx}"];
+  if (process.env["E2E"] === "true") {
+    testFiles.push("./e2e/**/*.{test,spec}.{ts,tsx}");
+  }
 
   const testConfig = defineTestConfig({
     test: {
@@ -39,7 +39,7 @@ function getConfig() {
         clean: true,
         cleanOnRerun: true,
         include: ["src"],
-        exclude: ["src/**/*.{test,spec}.{ts,tsx}", "src/main.{ts,tsx}"],
+        exclude: ["**/*.{test,spec}.{ts,tsx}"],
       },
       // biome-ignore lint/style/useNamingConvention: needed for vitest
       env: { NODE_ENV: "test" },

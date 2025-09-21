@@ -25,8 +25,8 @@ importers:
         specifier: ^19.8.1
         version: 19.8.1
       '@mkvlrn/config':
-        specifier: ^2.0.21
-        version: 2.0.21
+        specifier: ^2.0.23
+        version: 2.0.23
       '@tailwindcss/postcss':
         specifier: ^4.1.13
         version: 4.1.13
@@ -522,8 +522,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@mkvlrn/config@2.0.21':
-    resolution: {integrity: sha512-ex59LYyx9hrwogAb8qeO6y5WmLkQUoUGagMQHT5a/zDhJB8e1LzL+Ks7u87BzTfCZjM7+aRj8vRLBWHDZyMWTQ==}
+  '@mkvlrn/config@2.0.23':
+    resolution: {integrity: sha512-m3kM8BW6rzWOZHPVdfsdaldvpIHU8UqbPgoYEINYNpEw2CTcxm5QMImMfBiFsEZWY60ofdFmCxMb5VNaYHth9w==}
     engines: {node: 24.x}
 
   '@rolldown/pluginutils@1.0.0-beta.35':
@@ -2292,7 +2292,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mkvlrn/config@2.0.21': {}
+  '@mkvlrn/config@2.0.23': {}
 
   '@rolldown/pluginutils@1.0.0-beta.35': {}
 
