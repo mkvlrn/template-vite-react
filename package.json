@@ -35,6 +35,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@mkvlrn/config": "^2.0.23",
     "@tailwindcss/postcss": "^4.1.13",
+    "@tanstack/router-plugin": "^1.131.50",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
     "@testing-library/react": "^16.3.0",
@@ -54,6 +55,8 @@
     "vitest": "^3.2.4"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.89.0",
+    "@tanstack/react-router": "^1.131.50",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   }

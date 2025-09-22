@@ -8,6 +8,9 @@ Uses:
 - [vitest](https://github.com/vitest-dev/vitest) for tests
 - [commitlint](https://github.com/conventional-changelog/commitlint) for linting commit messages
 - [husky](https://github.com/typicode/husky) for git hooks
+- [tailwindcss](https://github.com/tailwindlabs/tailwindcss) for styling
+- [tanstack router](https://github.com/tanstack/router) for file based router
+- [tanstack query](https://github.com/tanstack/query) for fetching stuff
 
 ## running
 

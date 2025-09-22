@@ -4,6 +4,27 @@
   "extends": ["@mkvlrn/config/biome-react"],
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**/*", "!**/node_modules/**/*", "!**/build/**/*", "!**/coverage/**/*"]
-  }
+    "includes": [
+      "**/*",
+      "!**/node_modules/**/*",
+      "!**/build/**/*",
+      "!**/coverage/**/*",
+      "!**/routeTree.gen.ts"
+    ]
+  },
+
+  "overrides": [
+    {
+      // for tanstack router file based routes
+      "includes": ["src/routes/**/*.tsx"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useComponentExportOnlyModules": "off",
+            "useExportsLast": "off"
+          }
+        }
+      }
+    }
+  ]
 }

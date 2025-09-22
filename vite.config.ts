@@ -1,4 +1,5 @@
 import process from "node:process";
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { defineConfig as defineTestConfig, mergeConfig } from "vitest/config";
@@ -9,7 +10,7 @@ function getConfig() {
   const config = defineConfig({
     base: NODE_ENV === "production" ? "https://mkvlrn.github.io/template-vite-react/" : "",
 
-    plugins: [react()],
+    plugins: [tanstackRouter({ target: "react", autoCodeSplitting: true }), react()],
 
     server: {
       port: Number(PORT),

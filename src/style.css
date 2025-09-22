@@ -1,6 +1,7 @@
+/** biome-ignore-all lint/suspicious/noUnknownAtRules: tailwind */
+
 @import "tailwindcss";
 
-/* biome-ignore lint/suspicious/noUnknownAtRules: tailwind stuff */
 @theme {
   --foreground: #daf7dc;
   --background: #2f4858;
