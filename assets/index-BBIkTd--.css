@@ -1,0 +1,1 @@
+@layer components{@keyframes logo-spin{0%{transform:rotate(0)}to{transform:rotate(-360deg)}}.logo-spin{animation:15s linear infinite logo-spin}}
