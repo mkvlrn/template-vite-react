@@ -23,7 +23,7 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
+      <RouterProvider basepath={import.meta.env.BASE_URL} router={router} />
     </QueryClientProvider>
   </StrictMode>,
 );

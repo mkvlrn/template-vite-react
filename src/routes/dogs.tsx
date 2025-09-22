@@ -13,12 +13,16 @@ function Dogs() {
   }
 
   if (query.error) {
-    return <div className="m-auto">Error loading dog :(</div>;
+    return (
+      <div className="m-auto max-h-full max-w-full overflow-hidden flex items-center justify-center">
+        Error loading dog :(
+      </div>
+    );
   }
 
   return (
-    <div className="flex items-center justify-center m-auto">
-      <img alt="Doggy!" className="max-w-[80%] max-h-[80%]" src={query.data} />
+    <div className="flex-1 flex items-center justify-center p-4">
+      <img alt="Doggy!" className="max-w-full max-h-full object-contain" src={query.data} />
     </div>
   );
 }
