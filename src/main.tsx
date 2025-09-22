@@ -1,14 +1,11 @@
 import "./style.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { createMemoryHistory, createRouter, RouterProvider } from "@tanstack/react-router";
+import { createRouter, RouterProvider } from "@tanstack/react-router";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { routeTree } from "./routeTree.gen.ts";
 
-const memoryHistory = createMemoryHistory({
-  initialEntries: ["/"],
-});
-const router = createRouter({ routeTree, history: memoryHistory });
+const router = createRouter({ routeTree });
 declare module "@tanstack/react-router" {
   interface Register {
     router: typeof router;

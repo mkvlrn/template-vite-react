@@ -17,7 +17,7 @@ function Dogs() {
   }
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="flex items-center justify-center m-auto">
       <img alt="Doggy!" className="max-w-[80%] max-h-[80%]" src={query.data} />
     </div>
   );

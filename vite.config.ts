@@ -8,7 +8,7 @@ const { PORT = "3000", NODE_ENV } = process.env;
 
 function getConfig() {
   const config = defineConfig({
-    base: NODE_ENV === "production" ? "https://mkvlrn.github.io/template-vite-react/" : "",
+    base: NODE_ENV === "production" ? "/template-vite-react/" : "/",
 
     plugins: [tanstackRouter({ target: "react", autoCodeSplitting: true }), react()],
 

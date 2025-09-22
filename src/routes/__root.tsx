@@ -4,7 +4,7 @@ export const Route = createRootRoute({ component: RootLayout });
 
 function RootLayout() {
   return (
-    <main className="bg-background font-roboto-condensed text-foreground">
+    <main className="flex flex-col h-screen bg-background font-roboto-condensed text-foreground">
       <div className="p-2 flex gap-2">
         <Link className="[&.active]:font-bold" to="/">
           Home
@@ -14,7 +14,7 @@ function RootLayout() {
         </Link>
       </div>
       <hr />
-      <div className="flex h-screen ">
+      <div className="flex flex-1">
         <Outlet />
       </div>
     </main>
