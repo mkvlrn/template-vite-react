@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Activity } from "react";
 import { useDogs } from "../hooks/use-dogs.ts";
 
 export const Route = createFileRoute("/dogs")({
@@ -8,21 +9,19 @@ export const Route = createFileRoute("/dogs")({
 function Dogs() {
   const { query } = useDogs();
 
-  if (query.isLoading) {
-    return <div className="m-auto">Loading dog...</div>;
-  }
-
-  if (query.error) {
-    return (
-      <div className="m-auto max-h-full max-w-full overflow-hidden flex items-center justify-center">
-        Error loading dog :(
-      </div>
-    );
-  }
-
   return (
-    <div className="flex-1 flex items-center justify-center p-4">
-      <img alt="Doggy!" className="max-w-full max-h-full object-contain" src={query.data} />
+    <div className="flex m-auto items-center justify-center p-4">
+      <Activity mode={query.isError ? "visible" : "hidden"}>
+        <div>Error loading dog :(</div>
+      </Activity>
+
+      <Activity mode={query.isFetching ? "visible" : "hidden"}>
+        <div>Loading dog!</div>
+      </Activity>
+
+      <Activity mode={query.isFetching === false && query.isError === false ? "visible" : "hidden"}>
+        <img alt="Doggy!" className="max-w-full max-h-full object-contain" src={query.data} />
+      </Activity>
     </div>
   );
 }
