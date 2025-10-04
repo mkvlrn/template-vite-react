@@ -5,10 +5,10 @@ export const Route = createRootRoute({ component: RootLayout });
 function RootLayout() {
   return (
     <main className="flex flex-col h-screen bg-background font-roboto-condensed text-foreground">
-      <div className="p-2 flex gap-2">
+      <div className="p-2 flex gap-4">
         <Link className="[&.active]:font-bold" to="/">
           Home
-        </Link>{" "}
+        </Link>
         <Link className="[&.active]:font-bold" to="/dogs">
           Dogs!
         </Link>

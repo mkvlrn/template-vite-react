@@ -10,7 +10,14 @@ function getConfig() {
   const config = defineConfig({
     base: NODE_ENV === "production" ? "/template-vite-react/" : "/",
 
-    plugins: [tanstackRouter({ target: "react", autoCodeSplitting: true }), react()],
+    plugins: [
+      tanstackRouter({
+        target: "react",
+        autoCodeSplitting: true,
+        generatedRouteTree: "./src/generated/router.gen.ts",
+      }),
+      react(),
+    ],
 
     server: {
       port: Number(PORT),

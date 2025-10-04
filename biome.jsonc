@@ -9,7 +9,7 @@
       "!**/node_modules/**/*",
       "!**/build/**/*",
       "!**/coverage/**/*",
-      "!**/routeTree.gen.ts"
+      "!**/generated/**/*"
     ]
   },
 
