@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Activity } from "react";
-import { useDogs } from "../hooks/use-dogs.ts";
+import { useDogs } from "#/hooks/use-dogs.ts";
 
 export const Route = createFileRoute("/dogs")({ component: Dogs });
 

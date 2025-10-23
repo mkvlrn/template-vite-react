@@ -1,5 +1,5 @@
-import logo from "./logo.svg";
-import "./logo.css";
+import logo from "#/components/logo/logo.svg";
+import "#/components/logo/logo.css";
 
 export function Logo() {
   return (
