@@ -33,7 +33,6 @@
     "@biomejs/biome": "^2.2.7",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
-    "@mkvlrn/config": "^2.0.25",
     "@tailwindcss/postcss": "^4.1.15",
     "@tanstack/router-plugin": "^1.133.22",
     "@testing-library/dom": "^10.4.1",
