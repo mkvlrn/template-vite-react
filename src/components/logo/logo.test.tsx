@@ -4,10 +4,10 @@ import { Logo } from "#/components/logo/logo.tsx";
 
 describe("logo.tsx", () => {
   test("should render the component", () => {
+    // act
     render(<Logo />);
-
     const logo = screen.getByRole("img");
-
+    // assert
     expect(logo).toBeInTheDocument();
   });
 });

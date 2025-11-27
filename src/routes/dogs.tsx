@@ -6,7 +6,6 @@ export const Route = createFileRoute("/dogs")({ component: Dogs });
 
 function Dogs() {
   const dogs = useDogs();
-
   return (
     <div className="flex m-auto items-center justify-center p-4">
       <Activity mode={dogs.error ? "visible" : "hidden"}>

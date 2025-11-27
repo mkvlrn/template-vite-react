@@ -11,15 +11,12 @@ declare module "@tanstack/react-router" {
     router: typeof router;
   }
 }
-
 const queryClient = new QueryClient();
-
 const rootElement = document.querySelector("#root");
 if (!rootElement) {
   throw new Error("Root element not found");
 }
 const root = createRoot(rootElement);
-
 root.render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
