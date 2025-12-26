@@ -11,11 +11,9 @@ function Dogs() {
       <Activity mode={dogs.error ? "visible" : "hidden"}>
         <div>Error loading dog :(</div>
       </Activity>
-
       <Activity mode={dogs.loading ? "visible" : "hidden"}>
         <div>Loading dog!</div>
       </Activity>
-
       <Activity mode={dogs.ready ? "visible" : "hidden"}>
         <img alt="Doggy!" className="object-contain" src={dogs.data} />
       </Activity>
