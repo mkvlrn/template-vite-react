@@ -32,7 +32,7 @@
     "test": "vitest",
     "biome-check": "biome check --no-errors-on-unmatched",
     "biome-fix": "pnpm biome-check --write",
-    "typecheck": "tsc",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky"
   },
   "devDependencies": {
