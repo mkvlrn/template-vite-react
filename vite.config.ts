@@ -2,13 +2,14 @@ import process from "node:process";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
 import { defineConfig as defineTestConfig, mergeConfig } from "vitest/config";
 
 const { PORT = "3000", NODE_ENV } = process.env;
 
 const config = defineConfig({
   base: NODE_ENV === "production" ? "/template-vite-react/" : "/",
+
+  resolve: { conditions: ["dev"] },
 
   plugins: [
     tanstackRouter({
@@ -17,7 +18,6 @@ const config = defineConfig({
       generatedRouteTree: "./src/generated/router.gen.ts",
     }),
     react(),
-    tsconfigPaths(),
   ],
 
   server: {
@@ -34,8 +34,7 @@ const config = defineConfig({
 });
 
 const testConfig = defineTestConfig({
-  plugins: [tsconfigPaths()],
-
+  ssr: { resolve: { conditions: ["dev"] } },
   test: {
     include: ["**/**/*.{test,spec}.{ts,tsx}"],
     exclude: ["node_modules"],
