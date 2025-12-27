@@ -13,6 +13,11 @@
     ]
   },
   "extends": ["@mkvlrn/config/biome"],
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "overrides": [
     {
       // for tanstack router file based routes
