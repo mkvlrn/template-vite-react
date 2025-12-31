@@ -19,12 +19,6 @@
   "engines": {
     "node": "24"
   },
-  "imports": {
-    "#*": {
-      "dev": "./src/*.tsx",
-      "default": "./build/*.js"
-    }
-  },
   "scripts": {
     "build": "cross-env NODE_ENV=production vite build",
     "dev": "vite --host",
@@ -59,6 +53,7 @@
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.3",
     "vite": "^7.3.0",
+    "vite-tsconfig-paths": "^6.0.3",
     "vitest": "^4.0.16"
   },
   "dependencies": {
