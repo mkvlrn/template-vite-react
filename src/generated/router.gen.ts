@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './../routes/__root'
 import { Route as DogsRouteImport } from './../routes/dogs'
+import { Route as CatsRouteImport } from './../routes/cats'
 import { Route as IndexRouteImport } from './../routes/index'
 
 const DogsRoute = DogsRouteImport.update({
   id: '/dogs',
   path: '/dogs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CatsRoute = CatsRouteImport.update({
+  id: '/cats',
+  path: '/cats',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -25,27 +31,31 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cats': typeof CatsRoute
   '/dogs': typeof DogsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cats': typeof CatsRoute
   '/dogs': typeof DogsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cats': typeof CatsRoute
   '/dogs': typeof DogsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/dogs'
+  fullPaths: '/' | '/cats' | '/dogs'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/dogs'
-  id: '__root__' | '/' | '/dogs'
+  to: '/' | '/cats' | '/dogs'
+  id: '__root__' | '/' | '/cats' | '/dogs'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CatsRoute: typeof CatsRoute
   DogsRoute: typeof DogsRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/dogs'
       fullPath: '/dogs'
       preLoaderRoute: typeof DogsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cats': {
+      id: '/cats'
+      path: '/cats'
+      fullPath: '/cats'
+      preLoaderRoute: typeof CatsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CatsRoute: CatsRoute,
   DogsRoute: DogsRoute,
 }
 export const routeTree = rootRouteImport

@@ -12,6 +12,9 @@ function RootLayout() {
         <Link className="[&.active]:font-bold" to="/dogs">
           Dogs!
         </Link>
+        <Link className="[&.active]:font-bold" to="/cats">
+          Cats!
+        </Link>
       </div>
       <hr />
       <div className="flex flex-1 min-h-0">
