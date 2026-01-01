@@ -8,13 +8,14 @@ const PET_TO_URL: Record<Pet, string> = {
 };
 
 function extractUrlFromResponse(pet: Pet, response: unknown): string {
-  if (pet === "dog") {
-    return (response as { message: string }).message;
+  switch (pet) {
+    case "dog":
+      return (response as { message: string }).message;
+    case "cat":
+      return (response as [{ url: string }])[0].url;
+    default:
+      throw new Error("Invalid pet type");
   }
-  if (pet === "cat") {
-    return (response as [{ url: string }])[0].url;
-  }
-  return "";
 }
 
 async function getPet(pet: Pet): Promise<string> {
