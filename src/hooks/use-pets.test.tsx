@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { renderHook, waitFor } from "@testing-library/react";
 import type { ReactNode } from "react";
 import { afterEach, beforeEach, expect, test, vi } from "vitest";
-import { type Pet, usePets } from "#/hooks/use-pets";
+import { type Pet, usePets } from "#hooks/use-pets";
 
 let fetchSpy: ReturnType<typeof vi.spyOn>;
 beforeEach(() => {

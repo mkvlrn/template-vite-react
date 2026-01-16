@@ -1,5 +1,5 @@
 import { Activity } from "react";
-import { type Pet, usePets } from "#/hooks/use-pets";
+import { type Pet, usePets } from "#hooks/use-pets";
 
 interface PetsProps {
   type: Pet;

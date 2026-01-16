@@ -2,7 +2,6 @@ import process from "node:process";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import tsconfigpaths from "vite-tsconfig-paths";
 import { defineConfig as defineTestConfig, mergeConfig } from "vitest/config";
 
 const { PORT = "3000", NODE_ENV } = process.env;
@@ -17,7 +16,6 @@ const config = defineConfig({
       generatedRouteTree: "./src/generated/router.gen.ts",
     }),
     react(),
-    tsconfigpaths(),
   ],
   server: {
     port: Number(PORT),
@@ -32,7 +30,6 @@ const config = defineConfig({
 });
 
 const testConfig = defineTestConfig({
-  plugins: [tsconfigpaths()],
   test: {
     include: ["**/**/*.{test,spec}.{ts,tsx}"],
     exclude: ["node_modules"],
