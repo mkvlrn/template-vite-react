@@ -4,16 +4,15 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import { defineConfig as defineTestConfig, mergeConfig } from "vitest/config";
 
-const { PORT = "3000", NODE_ENV } = process.env;
+const { PORT = "3000", GITHUB_ACTIONS } = process.env;
 
 const config = defineConfig({
-  base: NODE_ENV === "production" ? "/template-vite-react/" : "/",
-  resolve: { conditions: ["dev"] },
+  base: GITHUB_ACTIONS ? "/template-vite-react/" : "/",
   plugins: [
     tanstackRouter({
       target: "react",
       autoCodeSplitting: true,
-      generatedRouteTree: "./src/generated/router.gen.ts",
+      generatedRouteTree: "./src/generated/router.gen.tsx",
     }),
     react(),
   ],
