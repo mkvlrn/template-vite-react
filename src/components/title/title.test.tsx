@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { expect, test } from "vitest";
-import { Title } from "#components/title/title";
+import { Title } from "#/components/title/title";
 
 test("should render the component", () => {
   // act

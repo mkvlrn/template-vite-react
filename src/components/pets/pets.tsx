@@ -1,5 +1,5 @@
 import { Activity } from "react";
-import { type Pet, usePets } from "#hooks/use-pets";
+import { type Pet, usePets } from "#/hooks/use-pets";
 
 interface PetsProps {
   type: Pet;
@@ -7,10 +7,11 @@ interface PetsProps {
 
 export function Pets({ type }: PetsProps) {
   const pets = usePets(type);
+  const loadingErrorMsg = "Error loading pet :(";
   return (
     <div className="flex m-auto items-center justify-center p-4 h-full overflow-hidden">
       <Activity mode={pets.error ? "visible" : "hidden"}>
-        <div>Error loading pet :(</div>
+        <div>{loadingErrorMsg}</div>
       </Activity>
       <Activity mode={pets.loading ? "visible" : "hidden"}>
         <div className="text-6xl animate-spin">🐾</div>
