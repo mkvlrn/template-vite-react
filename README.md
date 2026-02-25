@@ -2,6 +2,8 @@
 
 A sane, opinionated template for esm react projects written in typescript and built with vite.
 
+For new, LTS (>=24.14) node projects.
+
 Uses:
 
 - [biome](https://github.com/biomejs/biome) for linting and formatting
