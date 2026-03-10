@@ -1,6 +1,9 @@
 {
   "extends": ["@mkvlrn/config/tsconfig"],
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"]
+    "lib": ["ESNext", "DOM"],
+    "paths": {
+      "#/*": ["./src/*"]
+    }
   }
 }
