@@ -2,7 +2,10 @@
 
 A sane, opinionated template for esm react projects written in typescript and built with vite.
 
-For new, LTS (>=24.14) node projects.
+> [!NOTE]
+> This template favors [pnpm](https://pnpm.io). All instructions assume pnpm. If you insist on npm or yarn, you're on your own.
+>
+> This template targets Node.js LTS (>=24).
 
 Uses:
 
@@ -13,6 +16,8 @@ Uses:
 - [tailwindcss](https://github.com/tailwindlabs/tailwindcss) for styling
 - [tanstack router](https://github.com/tanstack/router) for file based router
 - [tanstack query](https://github.com/tanstack/query) for fetching stuff
+
+Subpath imports (`#/`) are used instead of relative paths, mapped in both `package.json` and `tsconfig.json`.
 
 ## running
 

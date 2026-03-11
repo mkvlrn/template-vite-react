@@ -24,7 +24,7 @@
     "#/*": "./src/*.tsx"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production vite build",
+    "build": "NODE_ENV=production vite build",
     "dev": "vite --host",
     "start": "vite preview --host",
     "test": "vitest",
@@ -32,7 +32,7 @@
     "test-ci": "vitest --bail=1 --reporter=github-actions",
     "biome-check": "biome check --diagnostic-level=warn --no-errors-on-unmatched",
     "biome-fix": "pnpm biome-check --write",
-    "typecheck": "tsc-files vite-env.d.ts",
+    "typecheck": "tsc",
     "prepare": "husky"
   },
   "devDependencies": {
@@ -50,7 +50,6 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.4",
     "@vitest/coverage-v8": "^4.0.18",
-    "cross-env": "^10.1.0",
     "husky": "^9.1.7",
     "jsdom": "^28.1.0",
     "lint-staged": "^16.3.3",
