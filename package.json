@@ -41,7 +41,7 @@
     "@commitlint/config-conventional": "^20.5.0",
     "@mkvlrn/config": "^3.1.7",
     "@tailwindcss/postcss": "^4.2.2",
-    "@tanstack/router-plugin": "^1.167.3",
+    "@tanstack/router-plugin": "^1.167.4",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
@@ -49,7 +49,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
-    "@vitest/coverage-v8": "^4.1.0",
+    "@vitest/coverage-v8": "^4.1.1",
     "husky": "^9.1.7",
     "jsdom": "^29.0.1",
     "lint-staged": "^16.4.0",
@@ -58,11 +58,11 @@
     "tsc-files": "^1.1.4",
     "typescript": "6.0.1-rc",
     "vite": "^8.0.2",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.1"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.95.0",
-    "@tanstack/react-router": "^1.168.2",
+    "@tanstack/react-query": "^5.95.2",
+    "@tanstack/react-router": "^1.168.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   }
