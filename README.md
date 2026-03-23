@@ -2,7 +2,7 @@
 
 ![build](https://img.shields.io/github/actions/workflow/status/mkvlrn/template-vite-react/ci.yml?branch=main&style=flat&logo=github)
 [![template](https://img.shields.io/badge/template-use_this_template-2ea44f?style=flat&logo=github)](https://github.com/mkvlrn/template-vite-react/generate)
-[![mise](https://badgen.net/badge/mise/en-place/1c1614?icon=https://raw.githubusercontent.com/mkvlrn/template-node/refs/heads/main/.github/assets/mise-logo-dark.svg)](https://mise.jdx.dev)
+[![mise](https://mise-versions.jdx.dev/badge.svg)](https://mise.jdx.dev)
 ![license](https://img.shields.io/github/license/mkvlrn/template-vite-react?style=flat)
 
 A sane, opinionated template for esm react projects written in typescript and built with vite.
