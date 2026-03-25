@@ -22,8 +22,8 @@ importers:
         version: 19.2.4(react@19.2.4)
     devDependencies:
       '@mkvlrn/config':
-        specifier: ^3.1.7
-        version: 3.1.7
+        specifier: ^3.1.8
+        version: 3.1.8
       '@tailwindcss/postcss':
         specifier: ^4.2.2
         version: 4.2.2
@@ -581,8 +581,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@mkvlrn/config@3.1.7':
-    resolution: {integrity: sha512-HqRuV6mxbuoIAw71l12Pe89j+2kgRkTntrF5nj/3vY4O6fwzWgKmi+QpLhkoqaPt7w+sIjgK0MZUCSSJHWp+2w==}
+  '@mkvlrn/config@3.1.8':
+    resolution: {integrity: sha512-HYayqyP6GCBjpBEDtVFDSoVpaFzhHOblHM6OMm9KBuOSHzEiY1HlXOZ1/NfGb1aVnHtD4pNfXcUNzU+xsQJtSQ==}
 
   '@napi-rs/wasm-runtime@1.1.1':
     resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
@@ -2046,7 +2046,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mkvlrn/config@3.1.7': {}
+  '@mkvlrn/config@3.1.8': {}
 
   '@napi-rs/wasm-runtime@1.1.1':
     dependencies:
