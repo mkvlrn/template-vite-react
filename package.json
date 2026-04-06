@@ -23,7 +23,23 @@
   "imports": {
     "#/*": "./src/*.tsx"
   },
+  "scripts": {
+    "dev": "node --watch ./src/main.ts",
+    "start": "node ./src/main.ts",
+    "build": "NODE_ENV=production vite build",
+    "lint": "pnpm lint-check --write",
+    "lint-check": "biome check --diagnostic-level=warn --no-errors-on-unmatched",
+    "typecheck": "tsc",
+    "typecheck-staged": "tsc-files",
+    "test": "vitest",
+    "test-staged": "vitest related --bail=1 --reporter=github-actions",
+    "test-ci": "vitest --bail=1 --reporter=github-actions",
+    "prepare": "lefthook install"
+  },
   "devDependencies": {
+    "@biomejs/biome": "^2.4.10",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
     "@mkvlrn/config": "^3.1.9",
     "@tailwindcss/postcss": "^4.2.2",
     "@tanstack/router-plugin": "^1.167.12",
@@ -36,6 +52,7 @@
     "@vitejs/plugin-react": "^6.0.1",
     "@vitest/coverage-v8": "^4.1.2",
     "jsdom": "^29.0.1",
+    "lefthook": "^2.1.5",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.2",
     "tsc-files": "^1.1.4",

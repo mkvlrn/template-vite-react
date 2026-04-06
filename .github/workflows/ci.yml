@@ -29,9 +29,9 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-pnpm-store-
       - run: pnpm install --frozen-lockfile
-      - run: mise typecheck
-      - run: mise lint-check
-      - run: mise test-ci
+      - run: pnpm typecheck
+      - run: pnpm lint-check
+      - run: pnpm test-ci
 
   deploy:
     needs: run-checks
@@ -63,7 +63,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - run: pnpm install --frozen-lockfile
-      - run: mise build
+      - run: pnpm build
       - uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
