@@ -37,16 +37,16 @@
     "prepare": "lefthook install"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.10",
+    "@biomejs/biome": "^2.4.11",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
-    "@mkvlrn/config": "^3.1.11",
+    "@mkvlrn/config": "^3.1.12",
     "@tailwindcss/postcss": "^4.2.2",
-    "@tanstack/router-plugin": "^1.167.12",
+    "@tanstack/router-plugin": "^1.167.22",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
-    "@types/node": "^25.5.2",
+    "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
@@ -61,8 +61,8 @@
     "vitest": "^4.1.4"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.97.0",
-    "@tanstack/react-router": "^1.168.10",
+    "@tanstack/react-query": "^5.99.0",
+    "@tanstack/react-router": "^1.168.21",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
   }
