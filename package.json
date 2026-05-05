@@ -24,8 +24,8 @@
     "#/*": "./src/*.tsx"
   },
   "scripts": {
-    "dev": "node --watch ./src/main.ts",
-    "start": "node ./src/main.ts",
+    "dev": "vite",
+    "preview": "vite --preview",
     "build": "NODE_ENV=production vite build",
     "lint": "pnpm lint-check --write",
     "lint-check": "biome check --diagnostic-level=warn --no-errors-on-unmatched",
