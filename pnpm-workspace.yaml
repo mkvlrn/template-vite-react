@@ -17,3 +17,4 @@ minimumReleaseAgeExclude:
   - lefthook-windows-x64@2.1.8
   - lefthook@2.1.8
   - postcss@8.5.15
+  - '@mkvlrn/config@4.0.3'
