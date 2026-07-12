@@ -6,7 +6,7 @@ import { Pets } from "#/components/pets/pets";
 
 let fetchSpy: ReturnType<typeof vi.spyOn>;
 beforeEach(() => {
-  fetchSpy = vi.spyOn(global, "fetch");
+  fetchSpy = vi.spyOn(globalThis, "fetch");
 });
 afterEach(() => {
   vi.restoreAllMocks();

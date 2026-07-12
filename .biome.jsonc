@@ -9,7 +9,8 @@
       "!**/build/**/*",
       "!**/coverage/**/*",
       "!**/*.d.ts",
-      "!**/generated/*"
+      "!**/generated/*",
+      "!**/*.svg"
     ]
   },
   "extends": ["@mkvlrn/config/biome.json"],
