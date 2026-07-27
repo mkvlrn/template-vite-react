@@ -18,4 +18,4 @@ minimumReleaseAgeExclude:
   - lefthook@2.1.8
   - postcss@8.5.15 || 8.5.17
   - '@mkvlrn/config@4.0.3 || 4.0.4'
-  - '@jsr/mkvlrn__config@0.0.3'
+  - '@jsr/mkvlrn__config@0.0.3 || 0.1.9'
