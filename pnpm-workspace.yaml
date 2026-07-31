@@ -1,10 +1,11 @@
+saveExact: true
 allowBuilds:
   "@tailwindcss/oxide": true
   esbuild: true
   lefthook: true
 minimumReleaseAgeExclude:
-  - '@types/node@25.9.1'
-  - '@types/react@19.2.15'
+  - "@types/node@25.9.1"
+  - "@types/react@19.2.15"
   - lefthook-darwin-arm64@2.1.8
   - lefthook-darwin-x64@2.1.8
   - lefthook-freebsd-arm64@2.1.8
@@ -17,5 +18,5 @@ minimumReleaseAgeExclude:
   - lefthook-windows-x64@2.1.8
   - lefthook@2.1.8
   - postcss@8.5.15 || 8.5.17
-  - '@mkvlrn/config@4.0.3 || 4.0.4'
-  - '@jsr/mkvlrn__config@0.0.3 || 0.1.9'
+  - "@mkvlrn/config@4.0.3 || 4.0.4"
+  - "@jsr/mkvlrn__config@0.0.3 || 0.1.9"
