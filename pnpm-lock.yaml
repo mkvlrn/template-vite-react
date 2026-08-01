@@ -31,8 +31,8 @@ importers:
         specifier: 21.2.0
         version: 21.2.0
       '@mkvlrn/config':
-        specifier: npm:@jsr/mkvlrn__config@0.2.0
-        version: '@jsr/mkvlrn__config@0.2.0'
+        specifier: npm:@jsr/mkvlrn__config@0.2.1
+        version: '@jsr/mkvlrn__config@0.2.1'
       '@tailwindcss/postcss':
         specifier: 4.3.3
         version: 4.3.3
@@ -396,8 +396,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@jsr/mkvlrn__config@0.2.0':
-    resolution: {integrity: sha512-D9BrO0DB7nPE3YcRxeCHiZnFFs6am6XKqmmbhjzj+LkKCt0Gn7DBymlhe7LowN+yE4ozE/oSydVSYvupQ41eEQ==, tarball: https://npm.jsr.io/~/11/@jsr/mkvlrn__config/0.2.0.tgz}
+  '@jsr/mkvlrn__config@0.2.1':
+    resolution: {integrity: sha512-DeTblNivf9cWZhmrUEuuswFIl17rNbdu6zMRXnCiBj4HE05ydZNIESkkZyBGx9aqu2YdErScyYEappjR3uSkBw==, tarball: https://npm.jsr.io/~/11/@jsr/mkvlrn__config/0.2.1.tgz}
 
   '@napi-rs/wasm-runtime@1.2.1':
     resolution: {integrity: sha512-KjZdi8Q1wh89gsVmghvbrMgWl6ZWmRmHV6wjB7/g4Zf0dyO+hH3neZUtuDNPO00qq5YE5RITVWvrIZKRaAmzGQ==}
@@ -2197,7 +2197,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@jsr/mkvlrn__config@0.2.0': {}
+  '@jsr/mkvlrn__config@0.2.1': {}
 
   '@napi-rs/wasm-runtime@1.2.1(@emnapi/core@2.0.0-alpha.3)(@emnapi/runtime@2.0.0-alpha.3)':
     dependencies:
