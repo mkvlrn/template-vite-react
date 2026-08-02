@@ -38,7 +38,12 @@ const testConfig = defineTestConfig({
       clean: true,
       cleanOnRerun: true,
       include: ["src"],
-      exclude: ["**/*.{test,spec}.{ts,tsx}", "src/main.tsx", "src/generated", "src/routes"],
+      exclude: [
+        "**/*.{test,spec}.{ts,tsx}",
+        "src/main.tsx",
+        "src/{generated,routes,assets}",
+        "**/*.{css,svg}",
+      ],
     },
     // biome-ignore lint/style/useNamingConvention: needed for vitest
     env: { NODE_ENV: "test" },
