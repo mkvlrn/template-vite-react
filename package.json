@@ -23,16 +23,16 @@
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "11.19.0"
+      "version": "11.20.0"
     }
   },
   "imports": {
     "#/*": "./src/*.tsx"
   },
   "devDependencies": {
-    "@mkvlrn/config": "npm:@jsr/mkvlrn__config@0.3.1",
+    "@mkvlrn/config": "npm:@jsr/mkvlrn__config@0.4.3",
     "@tailwindcss/postcss": "4.3.3",
-    "@tanstack/router-plugin": "1.168.24",
+    "@tanstack/router-plugin": "1.168.25",
     "@testing-library/dom": "10.4.1",
     "@testing-library/jest-dom": "7.0.0",
     "@testing-library/react": "16.3.2",
@@ -42,7 +42,7 @@
     "@vitejs/plugin-react": "6.0.5",
     "@vitest/coverage-v8": "4.1.10",
     "jsdom": "30.0.1",
-    "postcss": "8.5.25",
+    "postcss": "8.5.26",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2",
     "vite": "8.2.0",
@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "5.101.4",
-    "@tanstack/react-router": "1.170.19",
+    "@tanstack/react-router": "1.170.20",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   }

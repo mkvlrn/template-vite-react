@@ -1,5 +1,5 @@
 {
-  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "$schema": "https://biomejs.dev/schemas/latest/schema.json",
   "root": true,
   "files": {
     "ignoreUnknown": true,
@@ -13,7 +13,7 @@
       "!**/*.svg"
     ]
   },
-  "extends": ["@mkvlrn/config/biome.json"],
+  "extends": ["@mkvlrn/config/biome"],
   "overrides": [
     {
       // for tanstack router file based routes

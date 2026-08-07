@@ -1,4 +1,5 @@
 import process from "node:process";
+import baseTestConfig from "@mkvlrn/config/vitest";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
@@ -28,29 +29,23 @@ const config = defineConfig({
   },
 });
 
-const testConfig = defineTestConfig({
-  test: {
-    include: ["**/**/*.{test,spec}.{ts,tsx}"],
-    exclude: ["node_modules"],
-    watch: false,
-    coverage: {
-      // all: true,
-      clean: true,
-      cleanOnRerun: true,
-      include: ["src"],
-      exclude: [
-        "**/*.{test,spec}.{ts,tsx}",
-        "src/main.tsx",
-        "src/{generated,routes,assets}",
-        "**/*.{css,svg}",
-      ],
+const testConfig = mergeConfig(
+  baseTestConfig,
+  defineTestConfig({
+    test: {
+      include: ["**/**/*.{test,spec}.{ts,tsx}"],
+      coverage: {
+        exclude: [
+          "**/*.{test,spec}.{ts,tsx}",
+          "src/main.tsx",
+          "src/{generated,routes,assets}",
+          "**/*.{css,svg}",
+        ],
+      },
+      environment: "jsdom",
+      setupFiles: ["./vitest.setup.ts"],
     },
-    // biome-ignore lint/style/useNamingConvention: needed for vitest
-    env: { NODE_ENV: "test" },
-    environment: "jsdom",
-    passWithNoTests: true,
-    setupFiles: ["./vitest.setup.ts"],
-  },
-});
+  }),
+);
 
 export default mergeConfig(config, testConfig);
