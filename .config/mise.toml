@@ -1,9 +1,9 @@
 [tools]
-biome = "2.5.7"
+biome = "2.5.9"
 cocogitto = "7.0.0"
 lefthook = "2.1.10"
-node = "24.19.0"
-pnpm = "11.20.0"
+node = "26.7.0"
+pnpm = "11.22.0"
 
 [hooks]
 postinstall = "lefthook install"
@@ -41,3 +41,6 @@ run = "vitest related --bail=1 --reporter=github-actions"
 [tasks.test-ci]
 description = "Run vitest in ci mode"
 run = "vitest --bail=1 --reporter=github-actions"
+[tasks.sync-branch]
+description = "Sync package manager deps"
+run = "mise install && mise prune -y && pnpm install --frozen-lockfile && lefthook install"
