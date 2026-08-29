@@ -6,9 +6,13 @@ import { defineConfig } from "vite";
 import { defineConfig as defineTestConfig, mergeConfig } from "vitest/config";
 
 const { PORT = "3000", GITHUB_ACTIONS } = process.env;
+let viteBase = "/";
+if (GITHUB_ACTIONS) {
+  viteBase = "/template-vite-react/";
+}
 
 const config = defineConfig({
-  base: GITHUB_ACTIONS ? "/template-vite-react/" : "/",
+  base: viteBase,
   plugins: [
     tanstackRouter({
       target: "react",
