@@ -69,9 +69,13 @@ Creates a production build.
 
 ## ci
 
-CI is provided by GitHub Actions through [`.github/workflows/ci.yml`](https://github.com/mkvlrn/template-vite-react/blob/main/.github/workflows/ci.yml).
+CI is provided by GitHub Actions through [`.github/workflows/checks.yml`](https://github.com/mkvlrn/template-vite-react/blob/main/.github/workflows/checks.yml).
 
-It runs the project's automated checks and verifies that the application builds successfully.
+It runs:
+
+- Biome linting and formatting checks
+- TypeScript type checking
+- Vitest tests
 
 ## license
 
