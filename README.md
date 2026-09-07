@@ -1,6 +1,6 @@
 # template-vite-react
 
-[![ci](https://img.shields.io/github/actions/workflow/status/mkvlrn/template-vite-react/ci.yml?branch=main&style=flat&logo=github&label=ci)](https://github.com/mkvlrn/template-vite-react/actions/workflows/ci.yml?query=branch%3Amain)
+[![ci](https://img.shields.io/github/actions/workflow/status/mkvlrn/template-vite-react/checks.yml?branch=main&style=flat&logo=github&label=ci)](https://github.com/mkvlrn/template-vite-react/actions/workflows/checks.yml?query=branch%3Amain)
 [![template](https://img.shields.io/badge/template-use_this_template-2ea44f?style=flat&logo=github)](https://github.com/mkvlrn/template-vite-react/generate)
 [![mise](https://mise-versions.jdx.dev/badge.svg)](https://mise.jdx.dev)
 [![license](https://img.shields.io/github/license/mkvlrn/template-vite-react?style=flat)](https://github.com/mkvlrn/template-vite-react/blob/main/LICENSE)
