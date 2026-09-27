@@ -8,15 +8,18 @@ interface PetsProps {
 export function Pets({ type }: PetsProps) {
   const pets = usePets(type);
   const loadingErrorMsg = "Error loading pet :(";
+  const activityModes = ["hidden", "visible"] as const;
+  const activityMode = (active: boolean) => activityModes[Number(active)];
+  const loadingIndicator = "🐾";
   return (
     <div className="flex m-auto items-center justify-center p-4 h-full overflow-hidden">
-      <Activity mode={pets.error ? "visible" : "hidden"}>
+      <Activity mode={activityMode(pets.error)}>
         <div>{loadingErrorMsg}</div>
       </Activity>
-      <Activity mode={pets.loading ? "visible" : "hidden"}>
-        <div className="text-6xl animate-spin">🐾</div>
+      <Activity mode={activityMode(pets.loading)}>
+        <div className="text-6xl animate-spin">{loadingIndicator}</div>
       </Activity>
-      <Activity mode={pets.ready ? "visible" : "hidden"}>
+      <Activity mode={activityMode(pets.ready)}>
         <img
           alt={`${type}!`}
           className="object-contain max-w-full max-h-full animate-fade-in"

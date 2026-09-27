@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --foreground: #daf7dc;
-  --background: #2f4858;
+  --foreground: rgb(218 247 220);
+  --background: rgb(47 72 88);
   --color-foreground: var(--foreground);
   --color-background: var(--background);
   --font-roboto-condensed: "Roboto Condensed", sans-serif;
