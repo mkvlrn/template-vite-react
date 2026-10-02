@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 #MISE description="Install Lefthook git hooks"
 
-mise exec -- lefthook install "$@"
+set -euo pipefail
+
+mise exec -- pnpm install --frozen-lockfile
+mise exec -- lefthook install
